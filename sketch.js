@@ -44,10 +44,14 @@ function draw(){
         plane.x=World.mouseX
         spawnplanes()
         if(obstaclesGroup.isTouching(plane)){
+            plane.destroy()
             gameState ="END"
         }
     }
    else if (gameState===END){
+       ground = createSprite(200,180,400,20);
+     ground.addImage("ground",backImage);
+     drawSprites()
      
      textSize(20)
      fill ("green")
