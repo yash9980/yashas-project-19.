@@ -8,7 +8,7 @@ var gameState = PLAY
 function preload(){
     backImage = loadImage("back.png");
     planImage = loadAnimation("plane.png")
-    blastImage= loadAnimation("blast.jpg");
+    
     meteorImage = loadAnimation("asteroid.jpg");
 }
 
@@ -50,7 +50,7 @@ function draw(){
        
     }
     if(obstaclesGroup.isTouching(plane)){
-        plane.changeAnimation("blast",blastImage)
+        
         
         ground.destroy()
         textSize(50)
