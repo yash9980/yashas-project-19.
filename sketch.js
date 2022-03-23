@@ -34,7 +34,7 @@ function setup(){
 
     plane = createSprite(200,430)
     plane.addAnimation("plane",planImage)
-    plane.addAnimation("blast",blastImage)
+   
     plane.scale=0.05
     plane.x=World.mouseX
     obstaclesGroup= new Group()
